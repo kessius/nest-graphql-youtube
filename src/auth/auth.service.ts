@@ -19,8 +19,8 @@ export class AuthService {
 
     const validPasssword = compareSync(data.password, user.password);
 
-    if(!validPasssword) {
-      throw new UnauthorizedException('Incorrect password')
+    if (!validPasssword) {
+      throw new UnauthorizedException('Incorrect password');
     }
 
     const token = await this.jwtToken(user);
