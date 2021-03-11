@@ -11,8 +11,8 @@ import { AuthType } from './dto/auth.type';
 export class AuthService {
   constructor(
     private userService: UserService,
-    private jwtService: JwtService
-    ) {}
+    private jwtService: JwtService,
+  ) {}
 
   async validateUser(data: AuthInput): Promise<AuthType> {
     const user = await this.userService.getUserByEmail(data.email);
@@ -27,8 +27,7 @@ export class AuthService {
 
     return {
       user,
-      token
-    }
+    };
   }
 
   private async jwtToken(user: User): Promise<string> {
