@@ -20,6 +20,10 @@ export class ProductsService {
     return `This action updates a #${id} product`;
   }
 
+  update(id: number, updateProductInput: UpdateProductInput) {
+    return `This action updates a #${id} product`;
+  }
+
   remove(id: number) {
     return `This action removes a #${id} product`;
   }
