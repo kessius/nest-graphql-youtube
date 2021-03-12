@@ -25,7 +25,7 @@ export class ProductsService {
   }
 
   update(id: number, updateProductInput: UpdateProductInput) {
-    return `This action updates a #${id} product`;
+    return `Action updates a product id`;
   }
 
   remove(id: number) {
