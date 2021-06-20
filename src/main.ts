@@ -1,3 +1,4 @@
+// verificar junto com queri
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 
